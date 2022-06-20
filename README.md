@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This repository contains code I used to build my personal blog using starter template <a href="https://nextjs.org/learn" rel="nofollow">Next.js</a>
