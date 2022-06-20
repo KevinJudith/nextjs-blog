@@ -16,14 +16,14 @@ export default function Home() {
           <div id="bg"></div>
           <div id="overlay"></div>
           <div id="main">
-            <nav className="navbar navbar-expand-sm fixed-top" style={{ padding: '10px' }}>
+            <nav className="navbar navbar-expand-sm fixed-top" style={{ padding: '20px', }}>
               <Link href="/">
-                <a href="/" style={{ borderBottom: 'none', color: 'white', margin: '10px', fontSize:'1.25em' }}>
+                <a href="/" style={{ borderBottom: 'none', color: 'white', margin: '15px', fontSize:'1.5em', opacity:0.8 }}>
                   <FontAwesomeIcon icon="house" style={{ cursor: 'pointer' }}></FontAwesomeIcon>
                 </a>
               </Link>
               <Link href="/about">
-                <a href="/about" style={{ borderBottom: 'none', color: 'white', margin: '10px', fontSize:'1.25em' }}>
+                <a href="/about" style={{ borderBottom: 'none', color: 'white', margin: '15px', fontSize:'1.5em', opacity:0.8 }}>
                   <FontAwesomeIcon icon="user" style={{ cursor: 'pointer' }}></FontAwesomeIcon>
                 </a>
               </Link>
