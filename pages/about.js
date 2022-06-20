@@ -470,7 +470,7 @@ input, select, textarea {
 	}
 
 	#bg {
-		background-size: 2250px auto;
+		background-size: 1250px auto;
 		width: 6750px;
 	}
 
@@ -713,7 +713,7 @@ input, select, textarea {
 			line-height: 1em;
 		}
         #header h2 {
-			font-size: 3em;
+			font-size: 2.5em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;

@@ -514,7 +514,7 @@ input, select, textarea {
 	}
 
 	#bg {
-		background-size: 2250px auto;
+		background-size: 1250px auto;
 		width: 6750px;
 	}
 
