@@ -1061,6 +1061,9 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
+            header h2 {
+                font-size: 2em !important;
+            }
 
 		/* BG */
 
