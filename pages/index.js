@@ -16,24 +16,14 @@ export default function Home() {
           <div id="bg"></div>
           <div id="overlay"></div>
           <div id="main">
-            <nav className="navbar navbar-expand-sm fixed-top" style={{ padding: '20px', }}>
-              <Link href="/">
-                <a href="/" style={{ borderBottom: 'none', color: 'white', margin: '15px', fontSize:'1.5em', opacity:0.8 }}>
-                  <FontAwesomeIcon icon="house" style={{ cursor: 'pointer' }}></FontAwesomeIcon>
-                </a>
+            {/* <nav className="navbar navbar-expand-sm fixed-top" style={{ padding: '20px', }}>
+              <Link href="/about" style={{ color: 'black' }}>
+                <a style={{ borderBottom: 'none', color: 'white' }} >About</a>
               </Link>
-              <Link href="/about">
-                <a href="/about" style={{ borderBottom: 'none', color: 'white', margin: '15px', fontSize:'1.5em', opacity:0.8 }}>
-                  <FontAwesomeIcon icon="user" style={{ cursor: 'pointer' }}></FontAwesomeIcon>
-                </a>
-              </Link>
-              {/* <Link href="/harmoniks">
-                <a href="/about" style={{ borderBottom: 'none', color: 'white', marginRight:'20px'  }}>Harmoniks</a>
-              </Link> */}
-            </nav>
+            </nav> */}
             <header id="header">
               <h1>Kevin Smekens</h1>
-              <p>Product &nbsp;&bull;&nbsp; Engineering &nbsp;&bull;&nbsp; Harmonic Trading</p>
+              <p>Product &nbsp;&bull;&nbsp; Engineering</p>
               <div style={{ margin: '20px' }}>
                 <Link href="https://www.linkedin.com/in/kevinsmekens" passHref={true} rel='noopener noreferrer' target={"_blank"}>
                   <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
@@ -61,19 +51,18 @@ export default function Home() {
               </div>
             </header>
             <footer id="footer">
-              {/* <span class="copyright">
-                Made in <FontAwesomeIcon icon="heart-circle-bolt" style={{ color: 'orange' }} /> Singapore.
-              </span>
-              <span class="copyright"> Powered by Vercel</span>
-              <a class="copyright" href="https://vercel.com/" target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none', color: 'black', fontWeight: 'bold' }}>
-                Vercel
-              </a> */}
+              <p>
+                <Link href="/about" >
+                  <a style={{ color: 'white' }} >About</a>
+                </Link>
+              </p>
             </footer>
           </div>
         </div>
       </body>
 
       <style jsx>{`
+
       .iconStyle {
         cursor:'pointer';
         margin: 10;
@@ -115,11 +104,7 @@ export default function Home() {
           margin-left: 0.5rem;
         }
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      
 
         a {
           color: inherit;

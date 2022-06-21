@@ -7,25 +7,29 @@ function About() {
         <div className="container" id='wrapper'>
             <Head>
                 <title>Bootstrap</title>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"></link>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
             </Head>
             <body >
                 <div id="">
                     <div id="bg"></div>
                     <div id="main">
-                        <nav className="navbar navbar-expand-sm fixed-top" style={{ padding: '20px' }}>
-                            <Link href="/">
-                                <a id="homepage" href="/" style={{ borderBottom: 'none', color: 'white', fontSize: '1.5em', opacity:0.8 }}>
-                                    <FontAwesomeIcon icon="house" style={{ cursor: 'pointer' }}></FontAwesomeIcon>
-                                </a>
+                        {/* <nav className="navbar navbar-expand-sm flex fixed-top" style={{ padding: '20px' }}>
+                            <Link href="/" style={{ color: 'black' }}>
+                                <a style={{ borderBottom: 'none', color: 'white' }} >Home</a>
                             </Link>
-                        </nav>
+                        </nav> */}
                         <header id="header">
-                            <h2>Hello, I'm Kevin.</h2>
-                            <h2>I built this website using <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Next.js</a> framework.</h2>
-                            <h2>With <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Vercel</a> to deploy the app.</h2>
-                            <h2>More on the template at <a style={{ fontWeight: "bold", color: 'black' }} href="https://html5up.net/" target={"_blank"}>Html5up</a>.</h2>
+                            <h2>Design @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://html5up.net/" target={"_blank"}>Html5up</a></h2>
+                            <h2>Framework @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Next.js</a></h2>
+                            <h2>Deployment @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Vercel</a></h2>
                         </header>
+                        <footer id="footer">
+                            <p>
+                                <Link href="/">
+                                    <a style={{ color: 'white'}} >Home</a>
+                                </Link>
+                            </p>
+                        </footer>
                     </div>
                 </div>
             </body>
@@ -65,16 +69,11 @@ function About() {
           display: flex;
           justify-content: center;
           align-items: center;
+          padding 20px;
         }
 
         footer img {
           margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
         }
 
         a {
@@ -714,7 +713,7 @@ input, select, textarea {
 		}
         #header h2 {
 			font-size: 2.5em;
-			font-weight: 900;
+			font-weight: 800;
 			letter-spacing: -0.035em;
 			line-height: 1em;
 		}
