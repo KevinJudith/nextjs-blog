@@ -26,7 +26,7 @@ function About() {
                         <footer id="footer">
                             <p>
                                 <Link href="/">
-                                    <a style={{ color: 'white'}} >Home</a>
+                                    <a style={{ borderBottom:'none', color: 'white'}} >Home</a>
                                 </Link>
                             </p>
                         </footer>
