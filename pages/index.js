@@ -53,7 +53,7 @@ export default function Home() {
             <footer id="footer">
               <p>
                 <Link href="/about" >
-                  <a style={{ borderBottom: 'none',color: 'white' }} >Credits</a>
+                  <a style={{ color: 'white' }} >About</a>
                 </Link>
               </p>
             </footer>
