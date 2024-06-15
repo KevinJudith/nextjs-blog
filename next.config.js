@@ -1,9 +1,5 @@
 
-* add extra setting for next
-
-module.exports = {
-  reactStrictMode: true,
-};
+export const reactStrictMode = true;
 
 
 
