@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
     return (
@@ -13,23 +14,23 @@ function About() {
                 <div id="">
                     <div id="bg"></div>
                     <div id="main">
-                        {/* <nav className="navbar navbar-expand-sm flex fixed-top" style={{ padding: '20px' }}>
+                        <nav className="navbar navbar-expand-sm flex fixed-top" style={{ padding: '20px' }}>
                             <Link href="/" style={{ color: 'black' }}>
-                                <a style={{ borderBottom: 'none', color: 'white' }} >Home</a>
+								<FontAwesomeIcon icon={faHouse} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
                             </Link>
-                        </nav> */}
+                        </nav>
                         <header id="header">
                             <h2>Design @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://html5up.net/" target={"_blank"}>Html5up</a></h2>
                             <h2>Framework @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Next.js</a></h2>
                             <h2>Deployment @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Vercel</a></h2>
                         </header>
-                        <footer id="footer">
+                        {/* <footer id="footer">
                             <p>
                                 <Link href="/">
                                     <a style={{ borderBottom:'none', color: 'white'}} >Home</a>
                                 </Link>
                             </p>
-                        </footer>
+                        </footer> */}
                     </div>
                 </div>
             </body>

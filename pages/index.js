@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Home() {
@@ -16,11 +17,6 @@ export default function Home() {
           <div id="bg"></div>
           <div id="overlay"></div>
           <div id="main">
-            {/* <nav className="navbar navbar-expand-sm fixed-top" style={{ padding: '20px', }}>
-              <Link href="/about" style={{ color: 'black' }}>
-                <a style={{ borderBottom: 'none', color: 'white' }} >About</a>
-              </Link>
-            </nav> */}
             <header id="header">
               <h1>Kevin Smekens</h1>
               <p>Product &nbsp;&bull;&nbsp; Engineering</p>
@@ -48,15 +44,18 @@ export default function Home() {
                 <Link href="mailto:kjsmekens@gmail.com" passHref={true}>
                   <FontAwesomeIcon icon="envelope" style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
                 </Link>
+				<Link href="/about" style={{ color: 'black' }}>
+					<FontAwesomeIcon icon={faInfoCircle} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
+              	</Link>
               </div>
             </header>
-            <footer id="footer">
+            {/* <footer id="footer">
               <p>
                 <Link href="/about" >
                   <a style={{ borderBottom: 'none',color: 'white' }} >Credits</a>
                 </Link>
               </p>
-            </footer>
+            </footer> */}
           </div>
         </div>
       </body>
