@@ -2,7 +2,8 @@ import Head from 'next/head';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faChartBar, faEnvelope, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Home() {
@@ -23,55 +24,38 @@ export default function Home() {
               <div style={{ margin: '20px' }}>
                 <Link href="https://www.linkedin.com/in/kevinsmekens" passHref={true} rel='noopener noreferrer' target={"_blank"}>
                   <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-                    <FontAwesomeIcon icon={["fab", "linkedin"]} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
+					<FontAwesomeIcon icon={faLinkedin} className="iconStyle" />
                   </a>
                 </Link>
                 <Link href="https://www.facebook.com/smekenskevin" passHref={true}>
                   <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-                    <FontAwesomeIcon icon={["fab", "facebook"]} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
+					<FontAwesomeIcon icon={faFacebook} className="iconStyle" />
                   </a>
                 </Link>
                 <Link href="https://www.github.com/kevinjudith" passHref={true}>
                   <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-                    <FontAwesomeIcon icon={["fab", "github"]} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
+					<FontAwesomeIcon icon={faGithub} className="iconStyle" />
                   </a>
                 </Link>
                 <Link href="https://www.tradingview.com/u/suntrading" passHref={true}>
                   <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-                    <FontAwesomeIcon icon="chart-simple" style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
+					<FontAwesomeIcon icon={faChartBar} className="iconStyle" />
                   </a>
                 </Link>
                 <Link href="mailto:kjsmekens@gmail.com" passHref={true}>
-                  <FontAwesomeIcon icon="envelope" style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
+				  <FontAwesomeIcon icon={faEnvelope} className="iconStyle" />
                 </Link>
 				<Link href="/about" style={{ color: 'black' }}>
 					<FontAwesomeIcon icon={faInfoCircle} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
               	</Link>
               </div>
             </header>
-            {/* <footer id="footer">
-              <p>
-                <Link href="/about" >
-                  <a style={{ borderBottom: 'none',color: 'white' }} >Credits</a>
-                </Link>
-              </p>
-            </footer> */}
           </div>
         </div>
       </body>
 
       <style jsx>{`
 
-      .iconStyle {
-        cursor:'pointer';
-        margin: 10;
-        border:'solid';
-        borderWidth:1;
-        borderRadius:'100%';
-        width:'2.5em';
-        height:'2.5em';
-        padding:10;
-      }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;

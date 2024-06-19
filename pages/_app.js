@@ -4,8 +4,10 @@ import { faEnvelope, faS, faChartSimple, faHeart, faHeartCircleBolt, faHouse, fa
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/global.css';
 
-// config.autoAddCss = false
+
+config.autoAddCss = false
 library.add(fab, faEnvelope, faS, faChartSimple, faHeart, faHeartCircleBolt, faHouse, faUser)
 
 const App = ({ Component, pageProps }) => {

@@ -1,10 +1,10 @@
+/* styles/global.css */
 .iconStyle {
-    cursor:'pointer';
-    margin: 10;
-    border:'solid';
-    border-width:1;
-    border-radius:'100%';
-    width:'2.5em';
-    height:'2.5em';
-    padding:10;
-  }
+  cursor: pointer !important;
+  margin: 10px !important; /* Ensure 'px' unit is used */
+  border: solid 1px !important; /* Combined border and border-width */
+  border-radius: 100% !important;
+  width: 2.5em !important;
+  height: 2.5em !important;
+  padding: 20px !important; /* Ensure 'px' unit is used */
+}
