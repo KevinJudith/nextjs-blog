@@ -18,38 +18,11 @@ export default function Home() {
           <div id="bg"></div>
           <div id="overlay"></div>
           <div id="main">
-            <header id="header">
-              <h1>Kevin Smekens</h1>
-              <p>Product &nbsp;&bull;&nbsp; Engineering</p>
-              <div style={{ margin: '20px' }}>
-                <Link href="https://www.linkedin.com/in/kevinsmekens" passHref={true} rel='noopener noreferrer' target={"_blank"}>
-                  <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-					<FontAwesomeIcon icon={faLinkedin} className="iconStyle" />
-                  </a>
-                </Link>
-                <Link href="https://www.facebook.com/smekenskevin" passHref={true}>
-                  <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-					<FontAwesomeIcon icon={faFacebook} className="iconStyle" />
-                  </a>
-                </Link>
-                <Link href="https://www.github.com/kevinjudith" passHref={true}>
-                  <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-					<FontAwesomeIcon icon={faGithub} className="iconStyle" />
-                  </a>
-                </Link>
-                <Link href="https://www.tradingview.com/u/suntrading" passHref={true}>
-                  <a target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
-					<FontAwesomeIcon icon={faChartBar} className="iconStyle" />
-                  </a>
-                </Link>
-                <Link href="mailto:kjsmekens@gmail.com" passHref={true}>
-				  <FontAwesomeIcon icon={faEnvelope} className="iconStyle" />
-                </Link>
-				<Link href="/about" style={{ color: 'black' }}>
-					<FontAwesomeIcon icon={faInfoCircle} style={{ cursor: 'pointer', margin: 10, border: 'solid', borderWidth: '1', borderRadius: '100%', width: '2.5em', height: '2.5em', padding: 20 }} />
-              	</Link>
-              </div>
-            </header>
+			<header id="header" style={{ fontSize:'24px' }}>
+				<h2>Design @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://html5up.net/" target={"_blank"}>Html5up</a></h2>
+				<h2>Framework @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Next.js</a></h2>
+				<h2>Deployment @ <a style={{ fontWeight: "bold", color: 'black' }} href="https://nextjs.org/" target={"_blank"}>Vercel</a></h2>
+			</header>
           </div>
         </div>
       </body>
